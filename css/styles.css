@@ -1,7 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Ramaraja);
+/*font-family: 'Ramaraja', serif;*/
 
+
+
+/*======================== UNIVERSAL STYLES ========================*/
 
 body {
   position: relative;
+}
+
+.ramaraja {
+    /*font-family: 'Ramaraja', serif;*/
+    /*font-family: 'brandon-grotesque', sans-serif;*/
+    font-family: "double-pica",serif;
+    font-weight: 500;
 }
 
 
@@ -13,7 +25,7 @@ body {
     float: left;
 }
 
-.logo-container .brand{
+/*.logo-container .brand{
     font-size: 18px;
     color: #FFFFFF;
     line-height: 20px;
@@ -22,7 +34,7 @@ body {
     margin-top: 0px;
     width: 50px;
     height: 50px;
-}
+}*/
 
 .logo-container{
     margin-top: 6px;
@@ -66,6 +78,8 @@ body {
     background-color: rgba(51, 51, 51, 0.9);
 }
 
+/*============================== JUMBOTRON ==============================*/
+
 .jumbotron {
     background: url(../images/lightbulb.jpg) no-repeat fixed center center;
     /*background-attachment: fixed;*/
@@ -87,6 +101,8 @@ body {
     text-align: center;
 }
 
+/*================================= DESIGN GALLERY ===================================*/
+
 #gallery {
     /*background: url(../images/5.jpg) no-repeat center center;*/
     /*background-size: cover;*/
@@ -95,6 +111,12 @@ body {
     /*border-radius: 0px;*/
     margin-bottom: 0px;
     padding: 30px;
+}
+
+.galleryHead {
+    color: black;
+    font-size: 60px;
+    margin-bottom: 20px;
 }
 
 .galleryImg {
@@ -251,6 +273,8 @@ a:-webkit-any-link {
     text-align: justify;
 }
 
+/*============================ ABOUT ME ===========================*/
+
 #about {
     background: url(../images/wood-2.jpg) center center;
     /*background-size: cover;*/
@@ -258,6 +282,11 @@ a:-webkit-any-link {
     width: 100%;
     border-radius: 0px;
     margin-bottom: 0px;
+}
+
+.aboutHead {
+    color: white;
+    font-size: 60px;
 }
 
 .aboutImg img {
@@ -284,6 +313,8 @@ a:-webkit-any-link {
     /*word-wrap: break-word;*/
 }
 
+/*============================ CONTACT =============================*/
+
 #contact {
     /*background: url(../images/abstract-jumbo2.jpg) no-repeat center center;*/
     /*background-size: cover;*/
@@ -293,9 +324,27 @@ a:-webkit-any-link {
     margin-bottom: 0px;
 }
 
-.listItems {
-    display: table-row;
+.contactHead {
     color: white;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.form {
+    padding: 0px;
+}
+
+.map {
+    padding: 0px;
+}
+
+.listItems {
+    display: inline-block;
+    color: white;
+}
+
+address .listItems {
+    display: block;
 }
 
 a span i {
@@ -309,3 +358,55 @@ a span i:hover {
 .socialFooter {
     margin-top: 40px;
 }
+
+.socialFooter ul {
+    padding-left: 25px;
+    font-size: 17px;
+    margin-top: 7px;
+}
+
+.address {
+    padding-right: 0px;
+}
+
+/*==================== MEDIA QUERIES ======================*/
+
+@media(max-width:992px) {
+    .socialFooter ul {
+        padding-left: 5px;
+        text-align: center;
+    }
+    .responsiveImg {
+        margin: 0px auto;
+    }
+    .galleryImg {
+        margin-bottom: 20px
+    }
+}
+
+@media(max-width:768px) {
+    address .listItems {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media(max-width:420px) {
+    .selfPortrait {
+        margin-bottom: 10px;
+    }
+    .aboutNm h3 {
+        text-align: center;
+    }
+}
+
+@media(max-width:387px) {
+    /*.form {
+        margin-left: -20px;
+    }*/
+}
+
+
+
+
+/*================================================== END ==============================================*/
