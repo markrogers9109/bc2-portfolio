@@ -57,7 +57,7 @@ body {
     background-color: #FF8F5E;
     background-position: center top;
     margin-top: -100px;
-    min-height: 600px;
+    min-height: 700px;
 }
 
 .navbar-inverse {
@@ -92,7 +92,7 @@ body {
 }
 
 .jumbotron img {
-    max-width: 15%;
+    max-width: 20%;
     padding-top: 250px
 }
 
